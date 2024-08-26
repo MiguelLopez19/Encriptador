@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.left-section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.titulo {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+
+.capturaTexto {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+
+.parrafo p {
+    font-size: 12px;
+    color: #666;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.encriptarBoton, .desencriptarBoton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.encriptarBoton {
+    background-color: #003366;
+    color: #fff;
+}
+
+.encriptarBoton:hover {
+    background-color: #002244;
+}
+
+.desencriptarBoton {
+    background-color: #f4f4f4;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+.desencriptarBoton:hover {
+    background-color: #e0e0e0;
+}
+
+/* Right Section */
+.right-section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cajaResultado {
+    margin-bottom: 20px;
+}
+
+.cajaResultado textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+.copiarBoton {
+    background-color: transparent;
+    color: #003366;
+    border: 2px solid #003366;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.copiarBoton:hover {
+    background-color: #f4f4f4;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .left-section, .right-section {
+        width: 48%;
+    }
+
+    .botones {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titulo {
+        font-size: 32px;
+    }
+    
+    .text-input, .cajaResultado textarea {
+        height: 200px;
+    }
+
+    .encriptarBoton, .desencriptarBoton, .copiarBoton {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
